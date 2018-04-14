@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.ant.freeform</type>
+    <configuration>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/1">
+            <name>YAWLEditor4.1</name>
+        </general-data>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/2">
+            <!-- Do not use Project Properties customizer when editing this file manually. 
+ To prevent the customizer from showing, create nbproject/project.properties file and enter 
+auxiliary.show.customizer=false 
+property there. Adding 
+auxiliary.show.customizer.message=<message>
+ will show your customized message when someone attempts to open the customizer.  -->
+            <name>YAWLEditor4.1</name>
+            <properties>
+                <property name="ant.script">build/build.xml</property>
+            </properties>
+            <folders>
+                <source-folder>
+                    <label>YAWLEditor4.1</label>
+                    <location>.</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>source</label>
+                    <type>java</type>
+                    <location>source</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+            </folders>
+            <ide-actions>
+                <action name="build">
+                    <script>${ant.script}</script>
+                    <target>compile</target>
+                </action>
+                <action name="clean">
+                    <script>${ant.script}</script>
+                    <target>clean</target>
+                </action>
+                <action name="javadoc">
+                    <script>${ant.script}</script>
+                    <target>document</target>
+                </action>
+                <action name="run">
+                    <script>${ant.script}</script>
+                    <target>runTests</target>
+                </action>
+                <action name="rebuild">
+                    <script>${ant.script}</script>
+                    <target>clean</target>
+                    <target>compile</target>
+                </action>
+            </ide-actions>
+            <view>
+                <items>
+                    <source-folder style="packages">
+                        <label>source</label>
+                        <location>source</location>
+                    </source-folder>
+                    <source-file>
+                        <location>${ant.script}</location>
+                    </source-file>
+                </items>
+                <context-menu>
+                    <ide-action name="build"/>
+                    <ide-action name="rebuild"/>
+                    <ide-action name="clean"/>
+                    <ide-action name="javadoc"/>
+                    <ide-action name="run"/>
+                </context-menu>
+            </view>
+            <subprojects/>
+        </general-data>
+        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/2">
+            <compilation-unit>
+                <package-root>source</package-root>
+                <classpath mode="compile">lib/automaton.jar:lib/forms_rt.jar:lib/imgscalr-lib-4.2.jar:lib/jcalendar-1.4.jar:lib/jgoodies-common-1.8.1.jar:lib/jgoodies-looks-2.7.0.jar:lib/jgraphx.jar:lib/l2fprod-common-all.jar:lib/macify-1.4.jar:lib/servlet-api.jar:lib/xmltask.jar:build/analyzer/jaranalyzer-1.2.jar:tools/junit-4.4.jar:../yawl-4.1/build/3rdParty/lib/commons-codec-1.9.jar:../yawl-4.1/build/3rdParty/lib/commons-lang-2.3.jar:../yawl-4.1/build/3rdParty/lib/dom4j-1.6.1.jar:../yawl-4.1/build/3rdParty/lib/log4j-1.2-api-2.3.jar:../yawl-4.1/build/3rdParty/lib/log4j-api-2.3.jar:../yawl-4.1/build/3rdParty/lib/log4j-core-2.3.jar:../yawl-4.1/build/3rdParty/lib/log4j-slf4j-impl-2.3.jar:../yawl-4.1/build/3rdParty/lib/saxon9-s9api.jar:../yawl-4.1/build/3rdParty/lib/saxon9.jar:../yawl-4.1/build/3rdParty/lib/xercesImpl.jar:../yawl-4.1/build/3rdParty/lib/activation.jar:../yawl-4.1/build/3rdParty/lib/antlr-2.7.7.jar:../yawl-4.1/build/3rdParty/lib/apache_soap-2_3_1.jar:../yawl-4.1/build/3rdParty/lib/appbase.jar:../yawl-4.1/build/3rdParty/lib/axis-1.1RC2.jar:../yawl-4.1/build/3rdParty/lib/bcmail-jdk15-139.jar:../yawl-4.1/build/3rdParty/lib/bcprov-jdk15-139.jar:../yawl-4.1/build/3rdParty/lib/c3p0-0.9.2.1.jar:../yawl-4.1/build/3rdParty/lib/collections-generic-4.01.jar:../yawl-4.1/build/3rdParty/lib/colt-1.2.0.jar:../yawl-4.1/build/3rdParty/lib/common.jar:../yawl-4.1/build/3rdParty/lib/commons-beanutils.jar:../yawl-4.1/build/3rdParty/lib/commons-codec-1.9.jar:../yawl-4.1/build/3rdParty/lib/commons-collections-3.2.1.jar:../yawl-4.1/build/3rdParty/lib/commons-dbcp-1.3.jar:../yawl-4.1/build/3rdParty/lib/commons-digester.jar:../yawl-4.1/build/3rdParty/lib/commons-discovery.jar:../yawl-4.1/build/3rdParty/lib/commons-fileupload-1.2.2.jar:../yawl-4.1/build/3rdParty/lib/commons-io-2.0.1.jar:../yawl-4.1/build/3rdParty/lib/commons-lang-2.3.jar:../yawl-4.1/build/3rdParty/lib/commons-logging-1.1.1.jar:../yawl-4.1/build/3rdParty/lib/commons-pool-1.5.4.jar:../yawl-4.1/build/3rdParty/lib/concurrent-1.3.4.jar:../yawl-4.1/build/3rdParty/lib/cos.jar:../yawl-4.1/build/3rdParty/lib/dataprovider.jar:../yawl-4.1/build/3rdParty/lib/defaulttheme-gray.jar:../yawl-4.1/build/3rdParty/lib/derbyclient.jar:../yawl-4.1/build/3rdParty/lib/dom4j-1.6.1.jar:../yawl-4.1/build/3rdParty/lib/ecore.jar:../yawl-4.1/build/3rdParty/lib/ehcache-core-2.4.3.jar:../yawl-4.1/build/3rdParty/lib/errorhandler.jar:../yawl-4.1/build/3rdParty/lib/h2-1.3.176.jar:../yawl-4.1/build/3rdParty/lib/hibernate-c3p0-4.3.11.Final.jar:../yawl-4.1/build/3rdParty/lib/hibernate-commons-annotations-4.0.5.Final.jar:../yawl-4.1/build/3rdParty/lib/hibernate-core-4.3.11.Final.jar:../yawl-4.1/build/3rdParty/lib/hibernate-ehcache-4.3.11.Final.jar:../yawl-4.1/build/3rdParty/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar:../yawl-4.1/build/3rdParty/lib/hsqldb.jar:../yawl-4.1/build/3rdParty/lib/jandex-1.1.0.Final.jar:../yawl-4.1/build/3rdParty/lib/javassist-3.18.1-GA.jar:../yawl-4.1/build/3rdParty/lib/jaxb-api.jar:../yawl-4.1/build/3rdParty/lib/jaxb-impl.jar:../yawl-4.1/build/3rdParty/lib/jaxb-xjc.jar:../yawl-4.1/build/3rdParty/lib/jaxb1-impl.jar:../yawl-4.1/build/3rdParty/lib/jaxen-1.1.6.jar:../yawl-4.1/build/3rdParty/lib/jaxrpc.jar:../yawl-4.1/build/3rdParty/lib/jboss-logging-3.3.0.Final.jar:../yawl-4.1/build/3rdParty/lib/jboss-logging-annotations-1.2.0.Beta1.jar:../yawl-4.1/build/3rdParty/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar:../yawl-4.1/build/3rdParty/lib/jdom-2.0.5.jar:../yawl-4.1/build/3rdParty/lib/jsf-api.jar:../yawl-4.1/build/3rdParty/lib/jsf-impl.jar:../yawl-4.1/build/3rdParty/lib/jsfcl.jar:../yawl-4.1/build/3rdParty/lib/json.jar:../yawl-4.1/build/3rdParty/lib/jsr173_1.0_api.jar:../yawl-4.1/build/3rdParty/lib/jstl.jar:../yawl-4.1/build/3rdParty/lib/jung-3d-2.0.jar:../yawl-4.1/build/3rdParty/lib/jung-3d-demos-2.0.jar:../yawl-4.1/build/3rdParty/lib/jung-algorithms-2.0.jar:../yawl-4.1/build/3rdParty/lib/jung-api-2.0-tests.jar:../yawl-4.1/build/3rdParty/lib/jung-api-2.0.jar:../yawl-4.1/build/3rdParty/lib/jung-graph-impl-2.0.jar:../yawl-4.1/build/3rdParty/lib/jung-io-2.0.jar:../yawl-4.1/build/3rdParty/lib/jung-jai-2.0.jar:../yawl-4.1/build/3rdParty/lib/jung-jai-samples-2.0.jar:../yawl-4.1/build/3rdParty/lib/jung-samples-2.0.jar:../yawl-4.1/build/3rdParty/lib/jung-visualization-2.0.jar:../yawl-4.1/build/3rdParty/lib/junit-4.10.jar:../yawl-4.1/build/3rdParty/lib/log4j-1.2-api-2.3.jar:../yawl-4.1/build/3rdParty/lib/log4j-api-2.3.jar:../yawl-4.1/build/3rdParty/lib/log4j-core-2.3.jar:../yawl-4.1/build/3rdParty/lib/log4j-slf4j-impl-2.3.jar:../yawl-4.1/build/3rdParty/lib/macify-1.4.jar:../yawl-4.1/build/3rdParty/lib/mail.jar:../yawl-4.1/build/3rdParty/lib/mailapi.jar:../yawl-4.1/build/3rdParty/lib/mchange-commons-java-0.2.3.4.jar:../yawl-4.1/build/3rdParty/lib/mysql-connector-java-5.1.22-bin.jar:../yawl-4.1/build/3rdParty/lib/ojdbc6_9.jar:../yawl-4.1/build/3rdParty/lib/orderfulfillment.jar:../yawl-4.1/build/3rdParty/lib/postgresql-9.4.1207.jre6.jar:../yawl-4.1/build/3rdParty/lib/rowset.jar:../yawl-4.1/build/3rdParty/lib/saaj.jar:../yawl-4.1/build/3rdParty/lib/saxon9-dom.jar:../yawl-4.1/build/3rdParty/lib/saxon9-jdom.jar:../yawl-4.1/build/3rdParty/lib/saxon9-s9api.jar:../yawl-4.1/build/3rdParty/lib/saxon9.jar:../yawl-4.1/build/3rdParty/lib/servlet-api.jar:../yawl-4.1/build/3rdParty/lib/simple-java-mail-v1.8.jar:../yawl-4.1/build/3rdParty/lib/slf4j-api-1.7.12.jar:../yawl-4.1/build/3rdParty/lib/smtp.jar:../yawl-4.1/build/3rdParty/lib/sqlx.jar:../yawl-4.1/build/3rdParty/lib/standard.jar:../yawl-4.1/build/3rdParty/lib/twitter4j-core-2.1.8.jar:../yawl-4.1/build/3rdParty/lib/ucp.jar:../yawl-4.1/build/3rdParty/lib/uploadbean.jar:../yawl-4.1/build/3rdParty/lib/webui.jar:../yawl-4.1/build/3rdParty/lib/wsdl4j-20030807.jar:../yawl-4.1/build/3rdParty/lib/wsif.jar:../yawl-4.1/build/3rdParty/lib/xalan.jar:../yawl-4.1/build/3rdParty/lib/xdb.jar:../yawl-4.1/build/3rdParty/lib/xercesImpl.jar:../yawl-4.1/build/3rdParty/lib/xmlparserv2.jar:../yawl-4.1/build/3rdParty/lib/xmlunit-1.3.jar:../yawl-4.1/output/yawl-lib-4.1.jar:../yawl-4.1/output/procletEditor.jar:output/lib/jgoodies-common-1.8.1.jar:output/lib/jgoodies-looks-2.7.0.jar:output/lib/YAWLEditor-analyser-4.1.jar:output/lib/YAWLEditor-core-4.1.jar:output/lib/YAWLEditor-icons.jar:output/lib/automaton.jar:output/lib/commons-codec-1.9.jar:output/lib/commons-lang-2.3.jar:output/lib/dom4j-1.6.1.jar:output/lib/forms_rt.jar:output/lib/imgscalr-lib-4.2.jar:output/lib/jaxen-1.1.6.jar:output/lib/jcalendar-1.4.jar:output/lib/jdom-2.0.5.jar:output/lib/jgraph4yawl-4.1.jar:output/lib/l2fprod-common-all.jar:output/lib/log4j-1.2-api-2.3.jar:output/lib/log4j-api-2.3.jar:output/lib/log4j-core-2.3.jar:output/lib/log4j-slf4j-impl-2.3.jar:output/lib/macify-1.4.jar:output/lib/saxon9-dom.jar:output/lib/saxon9-s9api.jar:output/lib/saxon9.jar:output/lib/servlet-api.jar:output/lib/xercesImpl.jar:output/lib/xmleditorkit.jar:output/lib/yawl-lib-4.1.jar</classpath>
+                <source-level>1.5</source-level>
+            </compilation-unit>
+        </java-data>
+    </configuration>
+</project>
